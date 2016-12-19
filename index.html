@@ -1,0 +1,1592 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Guia Digital para el juego Uncherted 3: DRAKES DECEPTION</title>
+    <meta charset="utf-8" lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CSS -->
+    
+		<link rel="stylesheet" type="text/css" href="css/columnas.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.css">
+        <link rel="stylesheet" href="css/themes/uncharted_theme.css" />
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="css/main_style.css">
+        
+    <!-- Owl stylesheet -->
+        <link rel="stylesheet" href="plug-ins/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="plug-ins/owl-carousel/owl.theme.css">
+
+
+    
+    <!-- jQuery v1.10.2 -->
+	<script src="js/jquery.js"></script>
+
+    <script>
+    $(function() {
+        var $menu = $('#main-menu');
+
+        $(document).on('pagecontainerbeforeshow', function(ev, ui) {
+            //console.log("Cambiando a la página: ", ui.toPage.attr('id'));
+            var idPagina = ui.toPage.attr('id');
+
+            $menu.find('a').removeClass('on_page');
+            $menu.find('a[href=#' + idPagina + ']').addClass('on_page');
+        });
+    });
+    </script>
+    
+	<!-- jQuery Mobile -->
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+       
+
+</head>
+    
+
+<body>
+    
+
+    
+    <!-- {M} MENU -->
+    
+    <nav data-role="panel" id="panelNav" data-display="overlay" class="menu container_12">
+		<img src="img/logo1.PNG" alt="logo de la serie" title="Logo del formato ps3 de la siere uncharted 3">
+        <h1> Gúia del Uncharted 3</h1>
+        <ul data-role="listview" class="grid_12 menu_options" id="main-menu">
+            <li><a href="#index" data-transition="slidefade" class="menu_btn">Portada</a></li>
+			<li><a href="#personajes" data-transition="slidefade" class="menu_btn on_page">Personajes</a></li>
+			<li><a href="#control" data-transition="slidefade" class="menu_btn">Controles</a></li>
+            <li><a href="#guia" data-transition="slidefade" class="menu_btn">Guía</a></li>
+            <li><a href="#tesoros" data-transition="slidefade" class="menu_btn">Tesoros</a></li>
+            <li><a href="#trofeos" data-transition="slidefade" class="menu_btn">Trofeos</a></li>
+            <li><a href="#integrantes" data-transition="slidefade" class="menu_btn">Integrantes</a></li>
+            <li><a href="#logros" data-transition="slidefade" class="menu_btn">Mis Logros</a></li>
+		</ul>
+	</nav>
+    <!-- END -->
+        
+    <!-- {P1} PAGINA 1 PORTADA-->
+    
+    <div data-role="page" id="index" class="container_12 back3" >
+        <header data-role=“header” class="grid_12 main-header ui-header ui-bar-a">
+            <h2 class="ui-title">Portada</h2>
+            <a href="#panelNav" class="ui-btn-right ui-btn ui-icon-bullets ui-btn-icon-notext ui-corner-all"></a>
+        </header>
+        <section role="main" class="grid_12 root_section ui-content ui-page-theme-a">
+                <article role="main" class="ui-content">
+                    <ul class="ui-grid-b" id="springboard">
+                        <li class="ui-block-a">
+                            <a href="#personajes">
+                                <img src="img/icon_chara.png" alt="icono de personajes">
+                                <span>Personajes</span>
+                            </a>
+                        </li>
+                        <li class="ui-block-b">
+                            <a href="#control">
+                                <img src="img/icon_joystick.png" alt="icono de joystick">
+                                <span>Controles</span>
+                            </a>
+                        </li>
+                        <li class="ui-block-c">
+                            <a href="#guia">
+                                <img src="img/icon_guia.png" alt="icono de guia del juego">
+                                <span>Guía</span>
+                            </a>
+                        </li>
+                        <li class="ui-block-a">
+                            <a href="#tesoros">
+                                <img src="img/icon_treasure.png" alt="icono de tesoros">
+                                <span>Tesoros</span>
+                            </a>
+                        </li>
+                        <li class="ui-block-b">
+                            <a href="#trofeos">
+                                <img src="img/icon_trofeos.png" alt="icono de Tesoros">
+                                <span>Trofeos</span>
+                            </a>
+                        </li>
+                        <li class="ui-block-c">
+                            <a href="#integrantes">
+                                <img src="img/icon_staff.png" alt="icono de staff">
+                                <span>Integrantes</span>
+                            </a>
+                        </li>
+                        <li class="ui-block-b">
+                            <a href="#logros">
+                                <img src="img/icon_logros.png" alt="icono de logros">
+                                <span>Mis Logros</span>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+            
+        </section>
+    </div>
+
+   <!-- END -->
+
+    <!-- {P2} PAGINA 2 PERSONAJES-->
+    
+	<div data-role="page" id="personajes" class="container_12 back2">
+		<header data-role="header" data-add-back-btn="true" class="grid_12 main-header ui-header ui-bar-d">
+			<h2>PERSONAJES</h2>
+			<a href="#panelNav" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-right ui-corner-all"></a>
+		</header>
+		<section role="main" class="ui-content grid_12 root_section ui-page-theme-a">
+			<div id="owl" class="owl-carousel grid_12">
+              <div> <img src="img/chraca_1.png" alt="nate drake ficha"> </div>
+              <div> <img src="img/chraca_2.png" alt="victor sullivan ficha"> </div>
+              <div> <img src="img/chraca_3.png" alt="chloe ficha"> </div>
+              <div> <img src="img/chraca_4.png" alt="elena ficha"> </div>
+              <div> <img src="img/chraca_5.png" alt="charlie ficha"> </div>
+              <div> <img src="img/chraca_6.png" alt="elizabeth ficha"> </div>
+              <div> <img src="img/chraca_7.png" alt="tabolt ficha"> </div>
+              <div> <img src="img/chraca_8.png" alt="ramses ficha"> </div>
+            </div>
+		</section>
+    </div>
+
+   <!-- END -->
+    
+    <!-- {P3} PAGINA 3 CONTROLES-->
+    
+	<div data-role="page" id="control" class="container_12 back1">
+		<header data-role="header" data-add-back-btn="true" class="grid_12 main-header ui-header ui-bar-d">
+			<h2>CONTROLES</h2>
+			<a href="#panelNav" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-right ui-corner-all"></a>
+		</header>
+		<section role="main" class="ui-content grid_12 root_section ui-page-theme-a">
+            <h3 class="rotate">Gira la pantalla y selecciona un botón</h3>
+            <img class="joystick" src="img/ps3_controller.png" alt="control joystick ps3" usemap="#Map" />
+                <map name="Map" id="Map">
+                    <area id="left" href="javascript:void(0)" alt="left" shape="poly" coords="115,46,140,48,141,68,131,82,117,71" />
+                    <area id="up" href="javascript:void(0)" alt="up" shape="poly" coords="134,95,145,80,171,79,169,113,152,113" />
+                    <area id="right" href="javascript:void(0)" alt="right" shape="poly" coords="129,108,139,121,144,144,118,145,115,120" />
+                    <area id="down" href="javascript:void(0)" alt="down" shape="poly" coords="119,99,106,82,85,82,84,108,105,111" />
+                    <area id="l3" href="javascript:void(0)" alt="l3" shape="poly" coords="65,218,85,188,77,154,51,142,22,152,9,176,15,210,44,219" />
+                    <area id="r3" href="javascript:void(0)" alt="r3" shape="poly" coords="17,327,42,312,82,323,85,355,79,379,58,405,25,400,5,375,1,345" />
+                    <area id="start" href="javascript:void(0)" alt="start" shape="poly" coords="122,200,159,200,160,248,124,248" />
+                    <area href="javascript:void(0)" alt="select" shape="poly" coords="120,302,160,305,162,347,125,347" />
+                    <area id="square" href="javascript:void(0)" alt="square" shape="poly" coords="107,374,153,378,153,419,111,416" />
+                    <area id="x" href="javascript:void(0)" alt="x" shape="poly" coords="69,425,109,431,109,470,73,471" />
+                    <area id="circle" href="javascript:void(0)" alt="circle" shape="poly" coords="118,473,154,473,152,518,106,520,104,489" />
+                    <area id="triangle" href="javascript:void(0)" alt="triangle" shape="poly" coords="149,424,179,427,184,467,144,462" />
+                    <area id="r" href="javascript:void(0)" alt="r" shape="poly" coords="252,400,294,407,298,488,245,491" />
+                    <area id="l" href="javascript:void(0)" alt="l" shape="poly" coords="248,136,249,53,299,54,297,131" />
+                </map>
+            <div class="black-screen on_top off"></div>
+            <div id="popup_left" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_left.png" alt="iconos de controles ps3"> <p> SELECCIÓNA PISTOLA/UZI </p> </div>
+            <div id="popup_up" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_up.png" alt="iconos de controles ps3"> <p> SUGERENCIA </p> </div>
+            <div id="popup_right" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_right.png" alt="iconos de controles ps3"> <p> SELECCIÓNA <br> ESCOPETA/RIFLE </p> </div>
+            <div id="popup_down" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_down.png" alt="iconos de controles ps3"> <p> NADA </p> </div>
+            <div id="popup_l3" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_l3.png" alt="iconos de controles ps3"> <p> MUEVEVE </p> </div>
+            <div id="popup_r3" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_r3.png" alt="iconos de controles ps3"> <p> ZOOM </p> </div>
+            <div id="popup_start" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_start.png" alt="iconos de controles ps3"> <p> PAUSA <br> ABRE DIARIO </p> </div>
+            <div id="popup_square" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_square.png" alt="iconos de controles ps3"> <p> GOLPEA </p> </div>
+            <div id="popup_x" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_x.png" alt="iconos de controles ps3"> <p> SALTAR </p> </div>
+            <div id="popup_circle" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_circle.png" alt="iconos de controles ps3"> <p> CUBRIR <br> LANZAR </p> </div>
+            <div id="popup_triangle" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_traingle.png" alt="iconos de controles ps3"> <p> ACCIÓN </p> </div>
+            <div id="popup_r" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_r1.png" alt="iconos de controles ps3"> <p> DISPARA </p> <img src="img/iconos_ps3_r2.png" alt="iconos de controles ps3"> <p> RECARGA </p></div>
+            <div id="popup_l" class="ui-corner-all-b ui-li-divider ui-bar-b ui-first-child on_top off"> <img src="img/iconos_ps3_l1.png" alt="iconos de controles ps3"> <p> APUNTA </p> <img src="img/iconos_ps3_l2.png" alt="iconos de controles ps3"> <p> GRANADA </p> </div>
+		</section>
+    </div>
+
+   <!-- END -->
+
+    <!-- {P4} PAGINA 4 GUIA-->
+    
+	<div data-role="page" id="guia" class="container_12 back2">
+		<header data-role="header" data-add-back-btn="true" class="grid_12 main-header ui-header ui-bar-d">
+			<h2>GUÍA</h2>
+			<a href="#panelNav" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-right ui-corner-all"></a>
+		</header>
+		<section role="main" class="ui-content grid_12 root_section ui-page-theme-a">
+            
+        
+            <ul data-role="listview" data-inset="true">
+              <li> <!-- ********************** EP 1 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/1.jpg" alt="thumb del primer capitulo">
+                <h3>Episodio 1</h3>
+                <p id="epCompletado1"></p>
+                </a>
+                <a href="#ep1" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div data-role="popup" id="ep1" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="1">
+                        <video id="episodio1" width="320" height="240" controls>
+                          <source src="vids/ep1.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+
+              <li> <!-- ********************** EP 2 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/2.jpg" alt="thumb del capitulo">
+                <h3>Episodio 2</h3>
+                <p id="epCompletado2"></p>
+                </a>
+                <a href="#ep2" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div data-role="popup" id="ep2" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="2">
+                        <video id="episodio2" width="320" height="240" controls>
+                          <source src="vids/ep2.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+             
+                <li> <!-- ********************** EP 3 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/3.jpg" alt="thumb del capitulo">
+                <h3>Episodio 3</h3>
+                <p id="epCompletado3"></p>
+                </a>
+                <a href="#ep3" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div data-role="popup" id="ep3" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="3">
+                        <video id="episodio3" width="320" height="240" controls>
+                          <source src="vids/ep3.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+
+                <li> <!-- ********************** EP 4 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/4.jpg" alt="thumb del capitulo">
+                <h3>Episodio 4</h3>
+                <p id="epCompletado4"></p>
+                </a>
+                <a href="#ep4" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div data-role="popup" id="ep4" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="4">
+                        <video id="episodio4" width="320" height="240" controls>
+                          <source src="vids/ep4.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 5 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/5.jpg" alt="thumb del capitulo">
+                <h3>Episodio 5</h3>
+                <p id="epCompletado5"></p>
+                </a>
+                <a href="#ep5" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div data-role="popup" id="ep5" data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="5">
+                        <video id="episodio5" width="320" height="240" controls>
+                          <source src="vids/ep5.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 6 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/6.jpg" alt="thumb del capitulo">
+                <h3>Episodio 6</h3>
+                <p id="epCompletado6"></p>
+                </a>
+                <a href="#ep6" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep6" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="6">
+                        <video id="episodio6" width="320" height="240" controls>
+                          <source src="vids/ep6.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 7 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/7.jpg" alt="thumb del capitulo">
+                <h3>Episodio 7</h3>
+                <p id="epCompletado7"></p>
+                </a>
+                <a href="#ep7" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep7" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="7">
+                        <video id="episodio7" width="320" height="240" controls>
+                          <source src="vids/ep7.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 8 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/8.jpg" alt="thumb del capitulo">
+                <h3>Episodio 8</h3>
+                <p id="epCompletado8"></p>
+                </a>
+                <a href="#ep8" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep8" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="8">
+                        <video id="episodio8" width="320" height="240" controls>
+                          <source src="vids/ep8.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 9 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/9.jpg" alt="thumb del capitulo">
+                <h3>Episodio 9</h3>
+                <p id="epCompletado9"></p>
+                </a>
+                <a href="#ep9" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep9" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="9">
+                        <video id="episodio9" width="320" height="240" controls>
+                          <source src="vids/ep9.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 10 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/10.jpg" alt="thumb del capitulo">
+                <h3>Episodio 10</h3>
+                <p id="epCompletado10"></p>
+                </a>
+                <a href="#ep10" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep10" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="10">
+                        <video id="episodio10" width="320" height="240" controls>
+                          <source src="vids/ep10.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 11 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/11.jpg" alt="thumb del capitulo">
+                <h3>Episodio 11</h3>
+                <p id="epCompletado11"></p>
+                </a>
+                <a href="#ep11" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep11" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="11">
+                        <video id="episodio11" width="320" height="240" controls>
+                          <source src="vids/ep11.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 12 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/12.jpg" alt="thumb del capitulo">
+                <h3>Episodio 12</h3>
+                <p id="epCompletado12"></p>
+                </a>
+                <a href="#ep12" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep12" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="12">
+                        <video id="episodio12" width="320" height="240" controls>
+                          <source src="vids/ep12.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 13 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/13.jpg" alt="thumb del capitulo">
+                <h3>Episodio 13</h3>
+                <p id="epCompletado13"></p>
+                </a>
+                <a href="#ep13" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep13" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="13">
+                        <video id="episodio13" width="320" height="240" controls>
+                          <source src="vids/ep13.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 14 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/14.jpg" alt="thumb del capitulo">
+                <h3>Episodio 14</h3>
+                <p id="epCompletado14"></p>
+                </a>
+                <a href="#ep14" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep14" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="14">
+                        <video id="episodio14" width="320" height="240" controls>
+                          <source src="vids/ep14.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 15 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/15.jpg" alt="thumb del capitulo">
+                <h3>Episodio 15</h3>
+                <p id="epCompletado15"></p>
+                </a>
+                <a href="#ep15" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep15" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="15">
+                        <video id="episodio15" width="320" height="240" controls>
+                          <source src="vids/ep15.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 16 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/16.jpg" alt="thumb del capitulo">
+                <h3>Episodio 16</h3>
+                <p id="epCompletado16"></p>
+                </a>
+                <a href="#ep16" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep16" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="16">
+                        <video id="episodio16" width="320" height="240" controls>
+                          <source src="vids/ep16.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 17 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/17.jpg" alt="thumb del capitulo">
+                <h3>Episodio 17</h3>
+                <p id="epCompletado17"></p>
+                </a>
+                <a href="#ep17" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep17" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="17">
+                        <video id="episodio17" width="320" height="240" controls>
+                          <source src="vids/ep17.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 18 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/18.jpg" alt="thumb del capitulo">
+                <h3>Episodio 18</h3>
+                <p id="epCompletado18"></p>
+                </a>
+                <a href="#ep18" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep18" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="18">
+                        <video id="episodio18" width="320" height="240" controls>
+                          <source src="vids/ep18.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 19 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/19.jpg" alt="thumb del capitulo">
+                <h3>Episodio 19</h3>
+                <p id="epCompletado19"></p>
+                </a>
+                <a href="#ep19" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep19" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="19">
+                        <video id="episodio19" width="320" height="240" controls>
+                          <source src="vids/ep19.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+                
+                <li> <!-- ********************** EP 20 ****************************** -->
+                <a href="javascript:void(0)">
+                <img class="chapter" src="vids/img/20.jpg" alt="thumb del capitulo">
+                <h3>Episodio 20</h3>
+                <p id="epCompletado20"></p>
+                </a>
+                <a href="#ep20" data-rel="popup" data-position-to="window" data-role="button" data-theme="a"  class="ui-btn ui-icon-video ui-btn-icon-left"></a>
+                    <div id="ep20" data-role="popup"  data-overlay-theme="a" data-theme="d" data-tolerance="15,15" class="ui-content popup_vid popupVideo" data-episodio="20">
+                        <video id="episodio20" width="320" height="240" controls>
+                          <source src="vids/ep20.mp4" type="video/mp4">
+                        Hey hermano este video no va a ning'un lado.
+                        </video>
+                    </div>
+              </li>
+            </ul>
+            
+            <button class="grid_12" id="btn-reset-guia"  data-role="button" data-theme="b">Limpiar</button>
+            
+		</section>
+    </div>
+
+   <!-- END -->
+
+    <!-- {P5} PAGINA 5 TESOROS-->
+    
+	<div data-role="page" id="tesoros" class="container_12 back1">
+		<header data-role="header" data-add-back-btn="true" class="grid_12 main-header ui-header ui-bar-d">
+			<h2>TESOROS</h2>
+			<a href="#panelNav" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-right ui-corner-all"></a>
+		</header>
+		<section role="main" class="ui-content grid_12 root_section ui-page-theme-a">
+
+            <article data-role="collapsible-set">
+            <!-- ************************** Capitulo 1 ************************** -->
+                <div data-role="collapsible" data-theme="b" data-content-theme="b" data-collapsed="false" class="grid_12">
+                   <h4><span class="grid_6">Capítulo 1</span> <span class="grid_5 tesoros_ganados1"></span><span class="grid_1">/2</span></h4>
+                    <form class="detalle_tesoros">
+                        <div data-role="fieldcontain">
+                            <!-- Tesoro 1 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                            <a href="#tesoro1-1" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro1-1">
+                                                        <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                        <img src="img/tesoros/c1a.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select"  id='tesoro1'>
+                                        <span class="grid_10">Antique Boxing Medallion</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="1" data-num-tesoro='1'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 2 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                            <a href="#tesoro1-2" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro1-2">
+                                                        <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                        <img src="img/tesoros/c1b.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro2'>
+                                        <span class="grid_10">Antique Boxing Medallion</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="1" data-num-tesoro='2'>
+                                    </label>
+                                    </li>
+                                </ul>
+
+                        </div>
+				    </form>
+                </div>
+            <!-- ************************** Capitulo 2 ************************** -->
+                <div data-role="collapsible" data-theme="b" data-content-theme="b" data-collapsed="false" class="grid_12">
+                   <h4><span class="grid_6">Capítulo 2</span> <span class="grid_5 tesoros_ganados2"></span><span class="grid_1">/7</span></h4>
+                    <form class="detalle_tesoros">
+                        <div data-role="fieldcontain">
+                            <!-- Tesoro 1 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro2-1" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro2-1">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/c2a.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro3'>
+                                        <span class="grid_10">Emerald and Diamond Ring</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="2" data-num-tesoro='3'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 2 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro2-2" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro2-2">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/c2b.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro4'>
+                                        <span class="grid_10">Antique Coin Purse</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="2" data-num-tesoro='4'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 3 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro2-3" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro2-3">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/c2c.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro5'>
+                                        <span class="grid_10">Antique Colombian Soup Ladel</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="2" data-num-tesoro='5'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 4 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro2-4" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro2-4">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/c2d.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro6'>
+                                        <span class="grid_10">Pottery Chimu Vessel</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="2" data-num-tesoro='6'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 5 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro2-5" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro2-5">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/c2e.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro7'>
+                                        <span class="grid_10">Ancient Chupicuaro Figure</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="2" data-num-tesoro='7'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 6 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro2-6" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro2-6">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/c2f.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro8'>
+                                        <span class="grid_10">Shamanistic Jaguar Head</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="2" data-num-tesoro='8'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 7 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro2-7" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro2-7">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/c2g.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro9'>
+                                        <span class="grid_10">Antique Colombian Table Knife</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="2" data-num-tesoro='9'>
+                                    </label>
+                                    </li>
+                                </ul>
+
+                        </div>
+                    </form>
+                </div>
+            <!-- ************************** Capitulo 3 ************************** -->
+                <div data-role="collapsible" data-theme="b" data-content-theme="b" data-collapsed="false" class="grid_12">
+                   <h4><span class="grid_6">Capítulo 3</span> <span class="grid_5 tesoros_ganados3"></span><span class="grid_1">/3</span></h4>
+                    <form class="detalle_tesoros">
+                        <div data-role="fieldcontain">
+                            <!-- Tesoro 1 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro3-1" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro3-1">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/3a.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro10'>
+                                        <span class="grid_10">Dog-shaped Incan Whistle</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="3" data-num-tesoro='10'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 2 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro3-2" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro3-2">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/3b.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro11'>
+                                        <span class="grid_10">Silver Chimu Pendant</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="3" data-num-tesoro='11'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 3 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro3-3" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro3-3">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/3c.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro12'>
+                                        <span class="grid_10">Seventeenth Century Coin</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="3" data-num-tesoro='12'>
+                                    </label>
+                                    </li>
+                                </ul>
+                        </div>
+                    </form>
+                </div>
+                
+            <!-- ************************** Capitulo 4 ************************** -->
+                <div data-role="collapsible" data-theme="b" data-content-theme="b" data-collapsed="false" class="grid_12">
+                   <h4><span class="grid_6">Capítulo 4</span> <span class="grid_5 tesoros_ganados4"></span><span class="grid_1">/7</span></h4>
+                    <form class="detalle_tesoros">
+                        <div data-role="fieldcontain">
+                            <!-- Tesoro 1 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro4-1" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro4-1">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/4a.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro13'>
+                                        <span class="grid_10">Diamond-Studded Horse Brooch</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="4" data-num-tesoro='13'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 2 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro4-2" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro4-2">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/4b.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro14'>
+                                        <span class="grid_10">Coral Cameo Brooch</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="4" data-num-tesoro='14'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 3 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro4-3" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro4-3">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/4c.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro15'>
+                                        <span class="grid_10">Victorian Locket and Chain</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="4" data-num-tesoro='15'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 4 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro4-4" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro4-4">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/4d.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro16'>
+                                        <span class="grid_10">Silver Roses Bracelet</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="4" data-num-tesoro='16'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 5 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro4-5" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro4-5">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/4e.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro17'>
+                                        <span class="grid_10">Strange Relic</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="4" data-num-tesoro='17'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 6 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro4-6" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro4-6">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/4f.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro18'>
+                                        <span class="grid_10">Fierce Lion Bangle</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="4" data-num-tesoro='18'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 7 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro4-7" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro4-7">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/4g.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro19'>
+                                        <span class="grid_10">Antique Colombian Table Knife</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="4" data-num-tesoro='19'>
+                                    </label>
+                                    </li>
+                                </ul>
+
+                        </div>
+                    </form>
+                </div>
+                
+            <!-- ************************** Capitulo 5 ************************** -->
+                <div data-role="collapsible" data-theme="b" data-content-theme="b" data-collapsed="false" class="grid_12">
+                   <h4><span class="grid_6">Capítulo 5</span> <span class="grid_5 tesoros_ganados5"></span><span class="grid_1">/4</span></h4>
+                    <form class="detalle_tesoros">
+                        <div data-role="fieldcontain">
+                            <!-- Tesoro 1 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro5-1" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro5-1">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/5a.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro20'>
+                                        <span class="grid_10">Victorian Copper Penny</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="5" data-num-tesoro='20'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 2 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro5-2" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro5-2">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/5b.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro21'>
+                                        <span class="grid_10">Victorian Gold Sovereign</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="5" data-num-tesoro='21'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 3 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro5-3" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro5-3">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/5c.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro22'>
+                                        <span class="grid_10">Silver Hunter Pocketwatch</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="5" data-num-tesoro='22'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 4 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro5-4" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro5-4">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/5d.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro23'>
+                                        <span class="grid_10">Art Nouveau Flask</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="5" data-num-tesoro='23'>
+                                    </label>
+                                    </li>
+                                </ul>
+                        </div>
+                    </form>
+                </div>
+                
+            <!-- ************************** Capitulo 6 ************************** -->
+                <div data-role="collapsible" data-theme="b" data-content-theme="b" data-collapsed="false" class="grid_12">
+                   <h4><span class="grid_6">Capítulo 6</span> <span class="grid_5 tesoros_ganados6"></span><span class="grid_1">/9</span></h4>
+                    <form class="detalle_tesoros">
+                        <div data-role="fieldcontain">
+                            <!-- Tesoro 1 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-1" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-1">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/6a.jpg" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro24'>
+                                        <span class="grid_10">Antique Wax Seal Stamp</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='24'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 2 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-2" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-2">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/6b.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro25'>
+                                        <span class="grid_10">Gold Inlay Cameo Bangle</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='25'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 3 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-3" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-3">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/6c.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro26'>
+                                        <span class="grid_10">Diamond and Pearl Bracelet</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='26'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 4 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-4" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-4">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/6d.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro27'>
+                                        <span class="grid_10">Louis XVI Louis D'or Coin</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='27'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 5 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-5" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-5">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/6e.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro28'>
+                                        <span class="grid_10">Emerald Cameo Brooch</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='28'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 6 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-6" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-6">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/6f.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro29'>
+                                        <span class="grid_10">Art Nouveau Belt Buckle</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='29'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 7 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-7" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-7">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/4g.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro30'>
+                                        <span class="grid_10">Ruby and Diamond Ring</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='30'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 8 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-8" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-8">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/6h.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro31'>
+                                        <span class="grid_10">Miniature Portrait Pendant</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='31'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 9 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro6-9" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro6-9">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/6i.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro32'>
+                                        <span class="grid_10">Silver Rococo Teapot</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="6" data-num-tesoro='32'>
+                                    </label>
+                                    </li>
+                                </ul>
+
+                        </div>
+                    </form>
+                </div>
+                
+           <!-- ************************** Capitulo 7 ************************** -->
+                <div data-role="collapsible" data-theme="b" data-content-theme="b" data-collapsed="false" class="grid_12">
+                   <h4><span class="grid_6">Capítulo 7</span> <span class="grid_5 tesoros_ganados7"></span><span class="grid_1">/1</span></h4>
+                    <form class="detalle_tesoros">
+                        <div data-role="fieldcontain">
+                            <!-- Tesoro 1 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                            <a href="#tesoro7-1" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro7-1">
+                                                        <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                        <img src="img/tesoros/7.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select"  id='tesoro31'>
+                                        <span class="grid_10">Gold and Pearl Stickpin</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="7" data-num-tesoro='31'>
+                                    </label>
+                                    </li>
+                                </ul>
+
+                        </div>
+				    </form>
+                </div>
+                
+            <!-- ************************** Capitulo 8 ************************** -->
+                <div data-role="collapsible" data-theme="b" data-content-theme="b" data-collapsed="false" class="grid_12">
+                   <h4><span class="grid_6">Capítulo 8</span> <span class="grid_5 tesoros_ganados8"></span><span class="grid_1">/7</span></h4>
+                    <form class="detalle_tesoros">
+                        <div data-role="fieldcontain">
+                            <!-- Tesoro 1 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro8-1" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro8-1">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/8a.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro32'>
+                                        <span class="grid_10">Silver Sassanid Coin</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="8" data-num-tesoro='32'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 2 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro8-2" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro8-2">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/8b.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro33'>
+                                        <span class="grid_10">Ancient Metal Elephant</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="8" data-num-tesoro='33'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 3 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro8-3" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro8-3">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/8c.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro34'>
+                                        <span class="grid_10">Crusader Coin</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="8" data-num-tesoro='34'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 4 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro8-4" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro8-4">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/8d.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro35'>
+                                        <span class="grid_10">Enamel Copper Vessel</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="8" data-num-tesoro='34'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 5 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro8-5" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro8-5">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/8e.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro36'>
+                                        <span class="grid_10">Strange Relic</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="8" data-num-tesoro='35'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 6 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro8-6" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro8-6">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/8f.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro37'>
+                                        <span class="grid_10">Medieval Lead Horseman</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="8" data-num-tesoro='37'>
+                                    </label>
+                                    </li>
+                                </ul>
+                            <!-- Tesoro 7 -->
+                                <ul class="ui-grid-a">
+                                    <!-- IMGEN -->
+                                    <li class="ui-block-a">
+                                        <a href="#tesoro8-7" data-rel="popup" data-position-to="window"><img src="img/icon_image.png" alt="icono de imagen"></a>
+                                            <!-- IMAGEN POPUP --> 
+                                                <div data-role="popup" id="tesoro8-7">
+                                                    <a href="#tesoros" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                                                    <img src="img/tesoros/8g.png" alt="foto del tesoro">
+                                                </div>
+                                    </li>
+                                    <!-- CHECK BOX -->
+                                    <li class="ui-block-b">
+                                    <label class="treasure_select" id='tesoro38'>
+                                        <span class="grid_10">Byzantine Reliquary Cross</span>
+                                        <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox_goal" data-capitulo="8" data-num-tesoro='38'>
+                                    </label>
+                                    </li>
+                                </ul>
+
+                        </div>
+                    </form>
+                </div>
+
+                          
+
+            <!-- ************************** FINAL DE CAPITULOS ************************** -->
+                
+                <button class="grid_12" id="btn-reset-tesoros"  data-role="button" data-theme="b">Limpiar</button>
+                
+            </article>
+
+		</section>
+    </div>
+
+   <!-- END -->
+    
+    <!-- {P6} PAGINA 6 TROFEOS-->
+    
+	<div data-role="page" id="trofeos" class="container_12 back2">
+		<header data-role="header" data-add-back-btn="true" class="grid_12 main-header ui-header ui-bar-d">
+			<h2>TROFEOS</h2>
+			<a href="#panelNav" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-right ui-corner-all"></a>
+		</header>
+		<section role="main" class="ui-content grid_12 root_section ui-page-theme-a">
+			     <header id="obtenidos" class="grid_12">
+                    <ul class="ui-grid-c">
+                        <li class="ui-block-a"><img src='img/trofeos/trofeoplatino.png' alt="copa planito">
+                        <li class="ui-block-b"><img src='img/trofeos/trofeooro.png' alt="copa oro">
+                        <li class="ui-block-c"><img src='img/trofeos/trofeoplata.png' alt="copa plata" >
+                        <li class="ui-block-d"><img src='img/trofeos/trofeobronce.png' alt="copa bronce">
+                        <li class="ui-block-a"><p class="copa-psn"></p><p>/1</p></li>
+                        <li class="ui-block-b"><p class="copa-oro"></p><p>/1</p></li>
+                        <li class="ui-block-c"><p class="copa-plata"></p><p>/10</p></li>
+                        <li class="ui-block-d"><p class="copa-bronce"></p><p>/43</p></li>
+                   </ul>
+                     <div class="grid_12">
+                        <button id="btn-obtenido"  data-role="button" data-theme="b">Obtenidos</button>
+                        <button id="btn-reset"  data-role="button" data-theme="b">Limpiar</button>
+                    </div>
+                </header>
+                <article class="grid_12">
+                    <form>
+                        <fieldset data-role="controlgroup" data-iconpos="right" class="grid_12">
+                            <legend>Trofeos:</legend>
+                                <label class="seleccionado" id="trofeo1">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Platinum.png' alt="logo medalla">
+                                    <span class="grid_8">Recupera todos los trofeos</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="1" data-num-trofeo='1'>
+                                </label>
+                                <label class="seleccionado" id="trofeo2">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_First_Treasure.png' alt="logo medalla">
+                                    <span class="grid_8">Encuentra 1 tesoro</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo='2'>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Apprentice_Fortune_Hunter.png' alt="logo medalla">
+                                    <span class="grid_8">Encuentra 20 tesoros</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo='3'>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Skilled_Fortune_Hunter.png' alt="logo medalla">
+                                    <span class="grid_8">Encuentra 40 tesoros</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Adept_Fortune_Hunter.png' alt="logo medalla">
+                                    <span class="grid_8">Encuentra 60 tesoros</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Expert_Fortune_Hunter.png' alt="logo medalla">
+                                    <span class="grid_8">Encuentra 80 tesoros</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Expert_Fortune_Hunter.png' alt="logo medalla">
+                                    <span class="grid_8">Encuentra 80 tesoros</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Master_Fortune_Hunter.png' alt="logo medalla">
+                                    <span class="grid_8">Encuentra 100 tesoros</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="3" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Relic_Finder.png' alt="logo medalla">
+                                    <span class="grid_8">Encuentra la reliquia secreta</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Survivor.png' alt="logo medalla">
+                                    <span class="grid_8">Mata 75 enemigos sin morir</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="3" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Combat_Leapfrog.png' alt="logo medalla">
+                                    <span class="grid_8">Mata 10 enemigos seguidos combinando combate mano a mano y disparos</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" value="3" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_20_Headshots.png' alt="logo medalla">
+                                    <span class="grid_8">Raliza 20 disparos a la cabeza</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_100_Headshots.png' alt="logo medalla">
+                                    <span class="grid_8">Raliza 100 disparos a la cabeza</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="3" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Headshot_Expert.png' alt="logo medalla">
+                                    <span class="grid_8">Raliza 5 disparos seguidos a la cabeza</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Charted_-_Easy.png' alt="logo medalla">
+                                    <span class="grid_8">Termina el juego en modo fácil</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="4" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Charted_-_Normal.png' alt="logo medalla">
+                                    <span class="grid_8">Termina el juego en modo normal</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="3" data-num-trofeo=''>
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Charted_-_Hard.png' alt="logo medalla">
+                                    <span class="grid_8">Termina el juego en modo difícil</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="3">
+                                </label>
+                                <label class="seleccionado">
+                                    <img class="grid_3" src='img/trofeos/64px-Uncharted_3_trophy_Charted_-_Crushing.png' alt="logo medalla">
+                                    <span class="grid_8">Termina el juego en modo crushing</span>
+                                    <input type="checkbox" name="checkbox-0"  data-theme="b" class="checkbox" data-copa="2" data-num-trofeo=''>
+                                </label>
+                            
+    
+                        </fieldset>
+                    </form>         
+                </article>
+		</section>
+    </div>
+
+   <!-- END -->
+    
+    <!-- {P7} PAGINA 7 INTEGRANTES-->
+    
+	<div data-role="page" id="integrantes" class="container_12 back4">
+		<header data-role="header" data-add-back-btn="true" class="grid_12 main-header ui-header ui-bar-d">
+			<h2>INTEGRANTES</h2>
+			<a href="#panelNav" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-right ui-corner-all"></a>
+		</header>
+		<section role="main" class="ui-content grid_12 root_section ui-page-theme-a">
+			<h3>INTEGRANTE</h3>
+
+                <ul class="ui-grid-a">
+                    <li class="ui-block-a"><img src="img/micara.jpg" alt="foto de el rostros de ignacio vite"></li>
+                    <li class="ui-block-b mi-informcion"><h4>IGNACIO VITE</h4>Diseñador multimedial <br> 5to Cuatrimestre <br> Turno Noche <br> Año 2016 (2do Cuatrimestre)</li>
+                </ul>
+            <h5>Pof. Santago Gallino</h5>
+
+		</section>
+    </div>
+
+   <!-- END -->
+    
+    <!-- {P8} PAGINA 8 MIS LOGROS-->
+    
+	<div data-role="page" id="logros" class="container_12 back2">
+		<header data-role="header" data-add-back-btn="true" class="grid_12 main-header ui-header ui-bar-d">
+			<h2>LOGROS</h2>
+			<a href="#panelNav" class="ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-right ui-corner-all"></a>
+		</header>
+		<section role="main" class="ui-content grid_12 root_section ui-page-theme-a">
+			<h3> Tus Logros </h3>
+            
+            <article class="grid_12 info_logro">
+                <div class="grid_4">
+                        <img src="img/skull.png" alt="logo de jugabilidad">
+                </div>
+                <div class="grid_8">
+                        <p>Juego</p>
+                        <div id="prog_guia"><div class="label-guia"></div></div>
+                </div>
+            </article>
+            
+            <article class="grid_12 info_logro">
+                <div class="grid_4">
+                        <img src="img/cup.png" alt="logo de trofeos">
+                </div>
+                <div class="grid_8">
+                        <p>Trofeos</p>
+                         <div id="prog_trofeo"><div class="label-trofeos"></div></div>
+                </div>
+            </article>
+                
+            <article class="grid_12 info_logro">
+                <div class="grid_4">
+                        <img src="img/egg.png" alt="logo de tesoros">
+                </div>
+                <div class="grid_8">
+                        <p>Tesoros</p>
+                        <div id="prog_tesoros"><div class="label-tesoros"></div></div>
+                </div>
+            </article>
+                            
+
+        
+           
+            
+		</section>
+    </div>
+
+   <!-- END -->
+
+    
+    
+	
+	<!-- JS -->
+	<script src="js/main_js.js"></script>
+    
+    <!-- JQ UI -->    
+    <script src="js/jquery-ui.js"></script>
+
+
+    <!-- OWL CARROUSEL -->
+    <script src="plug-ins/owl-carousel/owl.carousel.js"></script>
+
+
+
+
+</body>
+</html>
